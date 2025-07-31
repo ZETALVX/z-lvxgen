@@ -1,0 +1,22 @@
+Z-LvXgen – Local SDXL / Flux WebUI
+Copyright 2025 ZetaLvX
+
+This product following third-party models:
+
+• Stable Diffusion XL 1.0  
+        © Stability AI  |  CreativeML Open RAIL++ M License
+
+• FLUX 1 & FLUX 1 Kontext  
+        © Lattice Labs  |  Apache 2.0 / Flux-1-dev-non-commercial-license
+
+It is designed to use templates:
+
+Models are not part of the project and can be downloaded from the official company pages.
+
+Redistributions, forks or derivatives of Z-LvXgen MUST:
+
+1. Retain this NOTICE file and the LICENSE file.  
+2. Keep visible attribution **“By ZetaLvX”** (banner or equivalent) in  
+   the source code *and* in any user-facing UI derived from LvXGen.
+
+See LICENSE for the full Apache 2.0 terms.

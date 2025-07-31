@@ -1,0 +1,154 @@
+/* ----------- Layout base ----------- */
+body{
+  font-family:sans-serif;
+  background:#111;
+  color:#eee;
+  padding:2em;
+  max-width:900px;
+  margin:auto;
+}
+
+h1{
+  text-align:center;
+  color:#84b8ff;
+  text-decoration:none;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:1em;
+  margin-bottom:2em;
+}
+
+textarea{
+  height:80px;
+  padding:.5em;
+  background:#222;
+  border:1px solid #555;
+  color:#fff;
+}
+
+input[type=file],
+input[type=number]{
+  padding:.4em;
+  background:#222;
+  border:1px solid #555;
+  color:#fff;
+}
+
+input[type=range]{width:100%}
+
+button{
+  padding:.6em;
+  background:#3366ff;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+}
+
+/* ----------- Gallery ----------- */
+#gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:1em;
+}
+#gallery img{
+  width:100%;
+  border-radius:4px;
+  cursor:pointer;
+  transition:.3s;
+}
+#gallery img:hover{transform:scale(1.05)}
+
+/* ----------- Modal ----------- */
+.img-modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.9);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+.img-modal img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:4px;
+}
+.close-btn{
+  position:absolute;
+  top:20px;
+  right:35px;
+  font-size:2rem;
+  color:#fff;
+  cursor:pointer;
+}
+.hide{display:none}
+
+/* ----------- Inpaint canvas ----------- */
+#maskCanvas{
+  border:2px solid #749ef7;
+  cursor:crosshair;
+}
+
+/* ----------- Footer ----------- */
+#site-footer{
+  margin-top:3rem;
+  padding:2rem 0;
+  text-align:center;
+  border-top:1px solid #333;
+  color:#aaa;
+}
+
+/* link nel footer (stato normale) */
+#site-footer a{
+  color:inherit;          /* niente blu di default */
+  text-decoration:none;   /* niente sottolineatura */
+}
+
+/* link nel footer (hover) */
+#site-footer a:hover{
+  opacity:.8;
+  cursor:pointer;
+}
+
+/* logo e didascalia */
+#site-footer .footer-logo{
+  width:100px;            /* ridimensiona a piacere */
+  height:auto;
+  display:block;
+  margin:0 auto .5rem;
+}
+#site-footer .footer-caption{
+  font-size:.9rem;
+  letter-spacing:.4px;
+}
+/* link “generici” – occhio a non toccare parti che vuoi restino standard */
+a{
+  text-decoration:none;
+  color:inherit;
+}
+a:hover{ opacity:.85; }
+/* --------- Parametri avanzati --------- */
+details .adv-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1rem 1.2rem;         /* riga / colonna */
+  margin-top:1rem;
+}
+
+details .form-row{
+  display:flex;
+  flex-direction:column;
+  gap:.4rem;
+}
+
+details .form-row label{
+  line-height:1.25;
+}
+
+details .form-row input[type="range"]{
+  width:100%;
+}
+

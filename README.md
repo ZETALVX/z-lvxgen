@@ -128,7 +128,7 @@ It embeds:
 | Model | License |
 |-------|---------|
 | Stable Diffusion XL 1.0 | CreativeML Open RAIL++ M |
-| FLUX 1 & FLUX 1 Kontext | Apache 2.0 |
+| FLUX 1 & FLUX 1 Kontext | Apache 2.0 - Flux-1-dev-non-commercial-license
 
 When you reuse or fork this repository **you must**:
 
@@ -141,5 +141,5 @@ When you reuse or fork this repository **you must**:
 ## 🙏 Acknowledgements
 
 * Stability AI – Stable Diffusion XL  
-* Lattice Labs – FLUX 1  
+* Lattice Labs – FLUX 1 / Kontext
 * Hugging Face Diffusers  

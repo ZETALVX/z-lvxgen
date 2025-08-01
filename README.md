@@ -132,6 +132,9 @@ It embeds:
 | Stable Diffusion XL 1.0 | CreativeML Open RAIL++ M |
 | FLUX 1 & FLUX 1 Kontext | Apache 2.0 - Flux-1-dev-non-commercial-license
 
+The models are not part of the project.  
+The project shows how to use them for local testing. To download the models, you can go to the website of the manufacturing company.  
+  
 When you reuse or fork this repository **you must**:
 
 1. Keep the credit **“By ZetaLvX”** in both code banner and any UI.  

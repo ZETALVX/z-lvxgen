@@ -11,7 +11,6 @@ Runs entirely on your own machine (GPU **or** CPU) and exposes a clean browser U
 * HTTPS by default – no login, no telemetry
 
 Tutorial: https://youtu.be/Fjg5idRR44o
-
 Donations: https://ko-fi.com/zetalvx
 ---
 

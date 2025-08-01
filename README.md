@@ -31,7 +31,7 @@ Runs entirely on your own machine (GPU **or** CPU) and exposes a clean browser U
 ## 🚀 Quick‑start
 
 ```bash
-git clone https://github.com/zetalvx/Z-LvXgen.git
+git clone https://github.com/ZETALVX/z-lvxgen.git
 cd Z-LvXgen
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt          # diffusers, torch, flask…

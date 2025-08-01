@@ -1,6 +1,6 @@
-#【L】【v】【X】【G】【e】【n】
+#【Z】-【L】【v】【X】【G】【e】【n】
 # LvXGen - By ZetaLvX
-# ⚠️  DO NOT REMOVE THE "By ZetaLvX" ⚠️
+# ⚠️  DO NOT REMOVE THIS BANNER  ⚠️
 # Keep the banner when reusing Z-LvXGen.
 
 import os, gc, datetime, random, base64

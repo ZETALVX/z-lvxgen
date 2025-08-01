@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <title>LvX Gen – Image Generator (SDXL / Flux)</title>
 
-  <!-- foglio di stile principale -->
+  <!-- main style sheet -->
   <link rel="stylesheet" href="/static/css/style.css">
 
-  <!-- piccoli valori in grassetto accanto agli slider -->
+  <!-- small bold values next to the sliders -->
   <style>
     #gval,#sval,#lwval{font-weight:bold;margin-left:.3em}
   </style>
@@ -19,16 +19,16 @@
     <h1>Created by ZetaLvX</h1>
   </a>
 
-  <!-- ───── FORM PRINCIPALE ───── -->
+  <!-- ───── MAIN FORM ───── -->
   <form id="gen-form">
-    <label>Motore:</label>
+    <label>Model:</label>
     <select id="engine">
       <option value="sdxl">Stable Diffusion XL</option>
       <option value="flux">Flux</option>
       <option value="flux_ctx">Flux Context</option>
     </select>
 
-    <label>Modalità di generazione:</label>
+    <label>Generation mode:</label>
     <select id="mode">
       <option value="t2i">Text-to-Image</option>
       <option value="img2img">Image-to-Image</option>
@@ -38,24 +38,24 @@
     <label>Prompt:</label>
     <textarea id="prompt" required></textarea>
 
-    <label>Prompt negativo (opzionale):</label>
+    <label>Negative prompt(opzionale):</label>
     <textarea id="neg"></textarea>
 
-    <label>Immagine iniziale (img2img / inpaint):</label>
+    <label>Prompt image (img2img / inpaint):</label>
     <input type="file" id="image" accept="image/*">
 
-    <!-- area canvas per la maschera -->
+    <!--canvas area for the mask-->
     <div id="canvas-box" class="hide">
-      <p>Disegna in <strong>bianco</strong> le aree da modificare (nero = conserva).</p>
+      <p>Draw the areas you want to change in <strong>white</strong> (black = keep).</p>
       <canvas id="maskCanvas" width="512" height="512"></canvas><br>
-      <button type="button" id="brushBtn">Pennello</button>
-      <button type="button" id="eraserBtn">Gomma</button>
-      <button type="button" id="clearBtn">Pulisci</button>
+      <button type="button" id="brushBtn">Brush</button>
+      <button type="button" id="eraserBtn">Eraser</button>
+      <button type="button" id="clearBtn">Clear</button>
     </div>
 
-    <!-- ───── PARAMETRI AVANZATI ───── -->
+    <!-- ───── ADVANCED PARAMETERS ───── -->
     <details>
-      <summary>Parametri avanzati</summary>
+      <summary>Advanced parameters</summary>
 
       <div class="adv-grid">
 
@@ -67,7 +67,7 @@
         <div class="form-row">
           <label>LoRA:</label>
           <select id="loraSelect">
-            <option value="">— nessuna —</option>
+            <option value="">— none —</option>
           </select>
         </div>
 
@@ -110,20 +110,20 @@
         </div>
 
         <div class="form-row">
-          <label>Numero immagini:</label>
+          <label>Number of images:</label>
           <input type="number" id="count" value="1" min="1" max="8">
         </div>
 
       </div><!-- /.adv-grid -->
     </details>
 
-    <button type="submit">Genera</button>
+    <button type="submit">Generate</button>
   </form>
 
-  <!-- galleria -->
+  <!-- gallery -->
   <div id="gallery"></div>
 
-  <!-- modale zoom -->
+  <!-- modal zoom -->
   <div id="modal" class="img-modal hide">
     <span id="close-modal" class="close-btn">&#x2716;</span>
     <img id="modal-img">

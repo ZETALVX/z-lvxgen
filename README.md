@@ -10,7 +10,7 @@ Runs entirely on your own machine (GPU **or** CPU) and exposes a clean browser U
 * Multiple schedulers (DPM++ 2M Karras, Euler, Euler a, UniPC)
 * HTTPS by default – no login, no telemetry
 
-Tutorial: https://youtu.be/Fjg5idRR44o
+Tutorial: https://youtu.be/Fjg5idRR44o  
 Donations: https://ko-fi.com/zetalvx
 ---
 
